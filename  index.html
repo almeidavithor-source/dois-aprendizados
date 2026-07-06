@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento do Projeto - Aprendizados do Protótipo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #334155;
+            padding-bottom: 60px;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            padding: 0 20px;
+        }
+        .intro-box {
+            background-color: #ffffff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        .learning-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .learning-card:hover {
+            transform: translateY(-2px);
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .badge-confusion {
+            background-color: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fee2e2;
+        }
+        .badge-useful {
+            background-color: #f0fdf4;
+            color: #16a34a;
+            border: 1px solid #dcfce7;
+        }
+        .card-title {
+            font-size: 1.3rem;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+        .meta-list {
+            margin-top: 15px;
+            padding-left: 20px;
+            color: #475569;
+        }
+        .meta-list li {
+            margin-bottom: 8px;
+        }
+        .next-steps {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        .next-steps h3 {
+            color: #1d4ed8;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Relatório de Teste de Protótipo</h1>
+        <p>Documentação de aprendizados e evolução da nossa solução digital</p>
+    </header>
+
+    <main>
+        <div class="intro-box">
+            <strong>💡 Contexto da Missão:</strong> Apresentamos nosso protótipo para outra equipe e coletamos feedbacks valiosos enquanto eles interagiam com a interface. Observar a experiência do usuário sem intervir nos trouxe revelações críticas para o sucesso do projeto.
+        </div>
+
+        <h2 class="section-title">Principais Aprendizados do Grupo</h2>
+
+        <div class="learning-card">
+            <span class="badge badge-confusion">⚠️ Gerou Dúvida / Necessita Melhoria</span>
+            <h3 class="card-title">1. Atrito na Navegação Inicial e Termos Técnicos</h3>
+            <p>Ao observar o outro time interagindo com a tela inicial, notamos que houve uma hesitação significativa antes do primeiro clique. O usuário tentou entender o que significavam botões com termos complexos como "Verificação Heurística de URLs".</p>
+            <ul class="meta-list">
+                <li><strong>O que descobrimos:</strong> O excesso de jargões técnicos afasta o usuário e gera insegurança no uso da ferramenta.</li>
+                <li><strong>Ação corretiva:</strong> Vamos simplificar o texto da interface (microcopy), substituindo termos difíceis por expressões diretas, como "Analisar Link Suspeito".</li>
+            </ul>
+        </div>
+
+        <div class="learning-card">
+            <span class="badge badge-useful">🚀 Mais Útil do que o Imaginado</span>
+            <h3 class="card-title">2. Alto Engajamento com o Simulador Dinâmico</h3>
+            <p>A funcionalidade de "Simulação de Golpes em Tempo Real" (onde o usuário podia testar se saberia identificar um SMS falso) foi compreendida instantaneamente e gerou grande entusiasmo. O usuário gastou a maior parte do tempo interagindo com esse elemento interativo.</p>
+            <ul class="meta-list">
+                <li><strong>O que descobrimos:</strong> A educação digital baseada em gamificação e exemplos práticos é muito mais poderosa e atraente do que blocos de textos explicativos.</li>
+                <li><strong>Ação corretiva:</strong> Vamos expandir essa seção no protótipo final, tornando o simulador o coração da nossa plataforma de conscientização.</li>
+            </ul>
+        </div>
+
+        <div class="next-steps">
+            <h3>🔄 Próximos Passos para o Nosso Grupo</h3>
+            <p>Com base nesses dois grandes pilares de aprendizado, nossa próxima iteração focará em <strong>limpar o visual de termos complexos</strong> e <strong>potencializar as ferramentas de interatividade</strong> que provaram seu valor prático no teste.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Documento gerado para o repositório do projeto no GitHub &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
